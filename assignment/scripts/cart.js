@@ -7,28 +7,23 @@ let basket = [];
 console.log('basket is', basket);
 
 // Made the variable
-function addItem() {
-    basket.push('Orange', 'Banana', 'Apple');
+function addItem(fruits ) {
+    basket.push(fruits);
     return true;
 } //Made the function
-console.log('Added Orange, Banana and Apple', addItem());
+addItem('Orange');
+addItem('Banana');
+addItem('Apple');
+console.log('Added Orange, Banana and Apple', basket);
 // checked console.log
 
 function listItems() {
 for (let i = 0; i < basket.length; i++) {
-    if (basket[i] === 'Orange') {
-        console.log(basket[i]);
-    }
-    if (basket[i] === 'Banana') {
-        console.log(basket[i]);
-    }
-    if (basket[i] === 'Apple') {
-        console.log(basket[i]);
-    }
-}
-} // make a function  
-console.log(listItems());
-  // Check console.log 
+     console.log(basket[i]);
+} 
+}// make a function 
+listItems(); 
+// Check console.log 
 
 
 function empty() {
