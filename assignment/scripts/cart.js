@@ -7,29 +7,28 @@ let basket = [];
 console.log('basket is', basket);
 
 // Made the variable
-function addItem(Orange) {
-    basket.push(Orange);
+function addItem(Orange, Banana, Apple) {
+    basket.push(Orange, Banana, Apple);
     return true;
 } //Made the function
-console.log('Added Orange (expect true)', addItem('Orange'));
+console.log('Added Orange,Banana and Apple (expect true)', addItem('Orange, Banana, Apple'));
 // checked console.log
-// Made new item called 'Orange'
-console.log('basket is not orange');
 
 function listItems() {
-   for (let i = 0; i < basket.lengtht; i++) {
-   console.log(basket[i]);
+   for (let i = 0; i < basket.length; i++) {
+    console.log('listItems should show Orange,Banana and Apple',listItems());
     return;
-   } 
-} // Made second fuction
-// Make a loop
+   }
+  } // Make a function
+// Check console.log 
 
-function empty() {
-console.log(basket.pop(Orange));
-    return;
-} //Made the last fuction
-console.log('Removed Orange', empty('Orange'));
+function empty(Orange, Banana, Apple) {
+    basket.pop =(Orange, Banana, Apple);
+    return true;
+  }// make a function
+  // check console.log
+  console.log('Removed Orange, Banana, Apple from basket - should say true', empty('Orange, Banana, Apple'));
 
-console.log('basket is', basket);
 
-// Should reset the 'basket' to an empty array
+
+
